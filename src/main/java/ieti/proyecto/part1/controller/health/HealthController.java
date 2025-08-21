@@ -1,4 +1,4 @@
-package ieti.proyecto.part1.Controller.health;
+package ieti.proyecto.part1.controller.health;
 
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -9,7 +9,7 @@ public class HealthController {
 
     @GetMapping("/health")
     public ResponseEntity<String> checkAPI(){
-        return ResponseEntity.ok("The API is working ok!");
+        return ResponseEntity.ok("<h1>The API is working ok!</h1>");
     }
 
 }
